@@ -1,24 +1,24 @@
 class Orbit < Formula
   desc "Control and build Orbit apps from the command line"
   homepage "https://orbitapps.io"
-  version "2026.07.14-1"
+  version "2026.07.31-1"
 
   # macOS: Apple Silicon only (Intel Macs are not built).
   on_macos do
     on_arm do
-      url "https://github.com/vadelabs/homebrew-tap/releases/download/cli-v2026.07.14-1/orbit-darwin-arm64"
-      sha256 "464898300cb4e5b3b35c14a196c2cea4cb87f523d66ecbd513bb3776cc28a592"
+      url "https://github.com/vadelabs/homebrew-tap/releases/download/cli-v2026.07.31-1/orbit-darwin-arm64"
+      sha256 "e3c7b238a1e30e7414923d39ad5173953a8869f130a83c5877809cd216956cfb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vadelabs/homebrew-tap/releases/download/cli-v2026.07.14-1/orbit-linux-arm64"
-      sha256 "d8871a7bce51aad4892a39f9aa8fb5eb2d53ca54dfb634751f9e6622ca9c3118"
+      url "https://github.com/vadelabs/homebrew-tap/releases/download/cli-v2026.07.31-1/orbit-linux-arm64"
+      sha256 "6408eb3f9084e3a262beea5c6b1cc7216d1bda3662f7f60e8e1139c444dde3a5"
     end
     on_intel do
-      url "https://github.com/vadelabs/homebrew-tap/releases/download/cli-v2026.07.14-1/orbit-linux-amd64"
-      sha256 "3825d09eb422296e6744681d693698b50b94b5f80278634acc24f0fc19fb01dc"
+      url "https://github.com/vadelabs/homebrew-tap/releases/download/cli-v2026.07.31-1/orbit-linux-amd64"
+      sha256 "a59eb72add3d618039d9b32d88a046d6d78bb341acf33cffcba9039c125e9ebf"
     end
   end
 
