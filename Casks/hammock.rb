@@ -1,21 +1,20 @@
 cask "hammock" do
-  version "2026.1004.4"
-  sha256 "f3c5c81361d2b43b0ceac57fd8d45bceb4faab131ad7f804625226bc739a1311"
+  version "2026.1004.5"
+  sha256 "4526e9b095cb2d57cad141f967ecab7e719891ae0bd49d521533c402a69ac91f"
 
-  url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-desktop-v2026.1004.4/Hammock-2026.1004.4-arm64.dmg"
+  url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-desktop-v2026.1004.5/Hammock-2026.1004.5-arm64.dmg"
   name "Hammock"
   desc "Pair, record and edit videos from the menu bar"
   homepage "https://hammock.video"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Hammock.app"
 
   # Not notarized yet: clear the quarantine flag so Gatekeeper lets it open.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Hammock.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Hammock.app"]
   end
 
   zap trash: [
