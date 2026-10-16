@@ -1,8 +1,8 @@
 cask "hammock" do
-  version "2026.1008.2"
-  sha256 "63f9539a20e81b31ca973725a598daa62a21b72434050321c5ee63631692ffb4"
+  version "2026.1016.1"
+  sha256 "7ec2b11c2663fcf42508ccb4796a6c2555d884b57b0479b59ef4f7a9c28ee1dc"
 
-  url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-desktop-v2026.1008.2/Hammock-2026.1008.2-arm64.dmg"
+  url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-desktop-v2026.1016.1/Hammock-2026.1016.1-arm64.dmg"
   name "Hammock"
   desc "Pair, record and edit videos from the menu bar"
   homepage "https://hammock.video"
@@ -11,11 +11,10 @@ cask "hammock" do
   depends_on macos: :sonoma
 
   app "Hammock.app"
+  # The CLI rides inside the app (tauri.release.conf.json), so one install
+  # puts `hammock` on the PATH too. On Linux the formula ships it.
+  binary "#{appdir}/Hammock.app/Contents/MacOS/hammock-cli", target: "hammock"
 
-  # Not notarized yet: clear the quarantine flag so Gatekeeper lets it open.
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Hammock.app"]
-  end
 
   zap trash: [
     "~/Library/Application Support/video.hammock.desktop",
