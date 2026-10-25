@@ -1,14 +1,15 @@
 cask "hammock" do
-  version "2026.1025.1"
-  sha256 "0403e017a16aef8a5f7ecefc866ef057183ef6c0263e631b66dc490160fe3218"
+  version "2026.1025.2"
+  sha256 "bffd1d8ac28b0b20ca0a5d4c8584dc4772ce7e2100957056c974769cbdb55521"
 
-  url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-desktop-v2026.1025.1/Hammock-2026.1025.1-arm64.dmg"
+  url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-desktop-v2026.1025.2/Hammock-2026.1025.2-arm64.dmg"
   name "Hammock"
   desc "Pair, record and edit videos from the menu bar"
   homepage "https://hammock.video"
 
   depends_on arch: :arm64
   depends_on macos: :sonoma
+  auto_updates true
 
   app "Hammock.app"
   # The CLI rides inside the app (tauri.release.conf.json), so one install
