@@ -1,8 +1,8 @@
 cask "hammock" do
-  version "2026.1030.2"
-  sha256 "4f846377aea3b520040dc61dcc58eac0ce149021b137f05900c08c657566b174"
+  version "2026.1030.3"
+  sha256 "8b3ae27c6fa890affa5a4fd42ff72ce7305f2c4788a6ee3649785df647b85c0c"
 
-  url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-desktop-v2026.1030.2/Hammock-2026.1030.2-arm64.dmg"
+  url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-desktop-v2026.1030.3/Hammock-2026.1030.3-arm64.dmg"
   name "Hammock"
   desc "Pair, record and edit videos from the menu bar"
   homepage "https://hammock.video"
