@@ -1,7 +1,7 @@
 class Hammock < Formula
   desc "Record, edit and export Hammock videos from the command line"
   homepage "https://hammock.video"
-  version "2026.11.15-7"
+  version "2026.11.15-8"
 
   # Linux only. On a Mac the cask ships the CLI inside Hammock.app
   # (`brew install --cask vadelabs/tap/hammock`); a formula on the Mac too
@@ -11,19 +11,19 @@ class Hammock < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-cli-v2026.11.15-7/hammock-darwin-arm64"
-      sha256 "211558fb522d3e01f504ee036a40c83c483146548bf51b403c5c902d9812fa87"
+      url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-cli-v2026.11.15-8/hammock-darwin-arm64"
+      sha256 "357cea8033338a6118eb6e4dadd56253b8c21570ea023364aa6f938b9f4474a0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-cli-v2026.11.15-7/hammock-linux-arm64"
-      sha256 "f7195e58b7616243a147f51ee6578977bdac14e9f04fd3430b7b1a5f9fb6c608"
+      url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-cli-v2026.11.15-8/hammock-linux-arm64"
+      sha256 "38ea77f3176dd57d111426d59d83e235023ffd849982540f22e0aed2663167c2"
     end
     on_intel do
-      url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-cli-v2026.11.15-7/hammock-linux-amd64"
-      sha256 "fef2893ef3f667998a1c065b39822ee88be087e9e1a7002c3b170b18fb1698fc"
+      url "https://github.com/vadelabs/homebrew-tap/releases/download/hammock-cli-v2026.11.15-8/hammock-linux-amd64"
+      sha256 "961872acf547784e35e3e821e7af487459ec474248900d459ad2ac08451edca9"
     end
   end
 
