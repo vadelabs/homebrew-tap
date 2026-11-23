@@ -1,8 +1,8 @@
 cask "orbit" do
-  version "2026.1117.1"
-  sha256 "597871c48dda92c39c723b3c702403a12628535ba726bca0604a9393fc99575c"
+  version "2026.1123.1"
+  sha256 "153fe91da5a01a84dd05495996b7a80a88d9ede9a70b6c1038cd4af6e9fc465b"
 
-  url "https://github.com/vadelabs/homebrew-tap/releases/download/orbit-desktop-v2026.1117.1/Orbit-2026.1117.1-arm64.dmg"
+  url "https://github.com/vadelabs/homebrew-tap/releases/download/orbit-desktop-v2026.1123.1/Orbit-2026.1123.1-arm64.dmg"
   name "Orbit"
   desc "Explore, build and ship apps from a window of its own"
   homepage "https://orbitapps.io"
